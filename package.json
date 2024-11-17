@@ -1,0 +1,33 @@
+{
+  "name": "excalidraw-electron",
+  "version": "0.0.1",
+  "description": "Open excalidraw in electron",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "rimraf build && yarn compile && electron .",
+    "compile": "tsc",
+    "build": "electron-packager . --overwrite --out=packages"
+  },
+  "keywords": [
+    "screen",
+    "drawer",
+    "overlay",
+    "blackboard",
+    "html canvas",
+    "canvas",
+    "electron"
+  ],
+  "author": "Mayk Brito",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/electron": "^1.6.10",
+    "@types/node": "^22.8.6",
+    "electron": "^33",
+    "electron-packager": "^15.2.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
